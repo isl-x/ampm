@@ -22,7 +22,7 @@ h1:before {
     background-image: url(../img/ampm.svg);
     background-repeat: no-repeat;
     width: 500px;
-    height: 528px;
+    height: 470px;
     margin: 50px;
 }
 
@@ -111,6 +111,7 @@ body {
     text-align: center;
     background: rgba(44, 52, 64, 0.75);
     border-radius: 0;
+    border: none;
 }
 
 .cta-btn--fancy {
@@ -129,14 +130,39 @@ body {
     }
 }
 
+.pitch {
+  text-align: center;
+  width: 600px;
+  margin: 50px 0 50px 0;
+}
+
+.pitch__body {
+  font-size: 48px;
+  color: #ffffff;
+}
+
+.pitch__body--alternate {
+  color: #FFC854;
+}
+
 .footer {
     bottom: 0;
     padding: 40px 0 45px 0;
-    background-color: #2C3440;
+    color: #000000;
+    background-color: #D3D3D3;
+    text-transform: uppercase;
+}
+
+.footer__location {
+
 }
 
 // UTILITY CLASSES
 
 .util-lowercase {
   text-transform: none;
+}
+
+.util-bold {
+  font-weight: bold;
 }
