@@ -20,6 +20,10 @@
   background-color: $ampm-yellow;
 }
 
+a:focus:active {
+    outline: none;
+}
+
 h1,
 h2,
 h3,
@@ -152,10 +156,10 @@ body {
     font-size: 28px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    padding: 10px 0;
+    padding: 10px 40px;
+    display: inline-block;
     text-decoration: none;
     max-width: 234px;
-    width: 100%;
     text-align: center;
     background: rgba(44, 52, 64, 0.75);
     border-radius: 0;
