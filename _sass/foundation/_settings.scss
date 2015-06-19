@@ -95,13 +95,14 @@ $row-width: rem-calc(1200);
 // $font-weight-normal: normal;
 // $font-weight-bold: bold;
 
-// $white       : #FFFFFF;
+$white       : #FFFFFF;
 // $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
+$ampm-yellow : #FFC854;
 // $vapor       : #F6F6F6;
 // $white-smoke : #F5F5F5;
 // $silver      : #EFEFEF;
-// $smoke       : #EEEEEE;
+$smoke       : #ECEDEE;
 // $gainsboro   : #DDDDDD;
 // $iron        : #CCCCCC;
 // $base        : #AAAAAA;
@@ -113,7 +114,7 @@ $row-width: rem-calc(1200);
 // $tuatara     : #444444;
 // $oil         : #333333;
 // $jet         : #222222;
-// $black       : #000000;
+$black       : #000000;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
@@ -151,8 +152,8 @@ $row-width: rem-calc(1200);
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $small-breakpoint:  em-calc(640);
-// $medium-breakpoint: em-calc(1024);
+$small-breakpoint:  em-calc(1000);
+$medium-breakpoint: em-calc(1024);
 // $large-breakpoint:  em-calc(1440);
 // $xlarge-breakpoint: em-calc(1920);
 

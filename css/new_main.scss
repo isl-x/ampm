@@ -23,7 +23,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    color: #ffffff;
+    color: $white;
     font-family: 'atrament-web';
     vertical-align: middle;
     max-width: 100%;
@@ -41,11 +41,11 @@ body {
     font-family: 'proxima-nova';
     text-transform: uppercase;
     font-size: 16px;
-    color: #FFC854;
+    color: $ampm-yellow;
     letter-spacing: 1px;
-    margin: 0;
+    margin: 30px 0 0 0;
     text-align: center;
-    width: 240px;
+    //width: 240px;
 }
 
 @media #{$medium-up} {
@@ -58,24 +58,22 @@ body {
 
 .hero__intro-link {
     font-family: 'atrament-web';
-    color: #ffffff;
+    color: $white;
     font-size: 28px;
     text-transform: uppercase;
     letter-spacing: 3px;
     text-decoration: none;
-    display: block;
+}
+
+@media #{$medium-up} {
+    .hero__intro-link {
+        display: block;
+    }
 }
 
 .hero__main-title {
-    //display: table;
-    //overflow: hidden;
     width: 100%;
-    //height: 551px;
-    //padding: 30px;
-    //position: absolute;
-    //top: 40%;
-    //left: 50%;
-    //margin: -275px 0 0 -350px;
+    margin: 80px 0 140px 0;
     h1 {
         text-indent: -9999px;
         background-image: url(../img/ampm.svg);
@@ -83,39 +81,58 @@ body {
         background-size: contain;
         background-position: 50% 50%;
         width: 100%;
-        height: 470px;
-        //margin: 50px;
+        height: 270px;
     }
 }
 
 @media #{$medium-up} {
     .hero__main-title {
         -webkit-animation: hover 3s infinite;
+        position: relative;
+        top: 100px;
+        margin: 0 0 140px 0;
+        h1 {
+            height: 470px;
+        }
     }
 }
 
 .hero__tagline {
     position: absolute;
-    bottom: 5%;
     display: block;
     text-align: center;
-    width: 600px;
     font-family: 'proxima-nova', sans-serif;
     font-size: 1em;
-    font-weight: 400;
     text-transform: uppercase;
-    color: #FFC854;
+    color: $ampm-yellow;
     letter-spacing: 1px;
+    //margin: 30px 30px 0 30px;
+}
+
+@media #{$medium-up} {
+    .hero__tagline {
+        margin-top: 40px;
+        //margin-left: 65px;
+    }
 }
 
 .hero__cta {
-    right: 50%;
+    //right: 50%;
     top: auto;
+    text-align: center;
+}
+
+@media #{$medium-up} {
+    .hero__cta {
+        position: relative;
+        top: 380px;
+        transform: translateY(-50%);
+    }
 }
 
 .cta-btn {
     font-family: 'atrament-web';
-    color: #ffffff;
+    color: $white;
     font-size: 28px;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -129,7 +146,7 @@ body {
 }
 
 .cta-btn--fancy {
-    border: 3px solid #FFC854;
+    border: 3px solid $ampm-yellow;
     transition: border-radius .2s ease-in-out, background .2s ease-in-out;
 
     &:hover {
@@ -145,24 +162,31 @@ body {
 }
 
 .pitch {
-  text-align: center;
-  margin: 50px 0 50px 0;
+    text-align: center;
+    margin: 50px 0 50px 0;
 }
 
 .pitch__body {
-  font-size: rem-calc(56px);
-  color: #ffffff;
+    font-size: rem-calc(42px);
+    color: $white;
+    text-transform: uppercase;
+}
+
+@media #{$medium-up} {
+    .pitch__body {
+        font-size: rem-calc(56px);
+    }
 }
 
 .pitch__body--alternate {
-  color: #FFC854;
+  color: $ampm-yellow;
 }
 
 .footer {
     bottom: 0;
     padding: 40px 0 45px 0;
-    color: #000000;
-    background-color: #D3D3D3;
+    color: $black;
+    background-color: $smoke;
     text-transform: uppercase;
     text-align: center;
 }
@@ -175,8 +199,13 @@ body {
 
 @media #{$medium-up} {
     .footer__date-loc {
-        border-left: 1px solid #000000;
+        border-left: 1px solid $black;
+        margin: 25px 0 0 0;
     }
+}
+
+.footer__cta {
+    margin: 20px 0 0 0;
 }
 
 @media #{$medium-up} {
