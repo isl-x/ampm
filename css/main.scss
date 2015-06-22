@@ -169,7 +169,7 @@ body {
 .pitch {
     text-align: center;
     margin: 80px 0 80px 0;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
 }
 
 .pitch__body {
@@ -224,6 +224,8 @@ body {
 
 .next-event__subheader {
     font-size: rem-calc(20px);
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .next-event__subheader:after {
@@ -243,7 +245,6 @@ body {
 @media #{$medium-up} {
     .next-event__body {
         font-size: rem-calc(20px);
-        letter-spacing: 2px;
     }
 }
 
