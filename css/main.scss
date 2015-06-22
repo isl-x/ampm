@@ -39,7 +39,6 @@ body {
     height: 100%;
     width: 100%;
     color: $white;
-    font-family: "atrament-web", sans-serif;
     vertical-align: middle;
     max-width: 100%;
     font-size: 1em;
@@ -49,20 +48,18 @@ body {
 .hero {
     background-image: url(../img/05.jpg);
     background-size: cover;
-    //min-height: 700px;
     background-position: center;
     padding-bottom: 40px;
 }
 
 .hero__intro {
-    font-family: "proxima-nova", sans-serif;
+    font-family: $font-family-proxima;
     text-transform: uppercase;
     font-size: 16px;
     color: $ampm-yellow;
     letter-spacing: 1px;
     margin: 30px 0 0 0;
     text-align: center;
-    //width: 240px;
 }
 
 @media #{$medium-up} {
@@ -74,7 +71,7 @@ body {
 }
 
 .hero__intro-link {
-    font-family: 'atrament-web';
+    font-family: $font-family-atrament;
     color: $white;
     font-size: 28px;
     text-transform: uppercase;
@@ -118,26 +115,22 @@ body {
 }
 
 .hero__tagline {
-    //position: absolute;
     display: block;
     text-align: center;
-    font-family: "proxima-nova", sans-serif;
+    font-family: $font-family-proxima;
     font-size: 1em;
     text-transform: uppercase;
     color: $ampm-yellow;
     letter-spacing: 1px;
-    //margin: 30px 30px 0 30px;
 }
 
 @media #{$medium-up} {
     .hero__tagline {
         margin-top: 40px;
-        //margin-left: 65px;
     }
 }
 
 .hero__cta {
-    //right: 50%;
     top: auto;
     text-align: center;
 }
@@ -151,7 +144,7 @@ body {
 }
 
 .cta-btn {
-    font-family: 'atrament-web';
+    font-family: $font-family-atrament;
     color: $white;
     font-size: 28px;
     text-transform: uppercase;
@@ -181,24 +174,78 @@ body {
 
 .pitch {
     text-align: center;
-    margin: 50px 0 50px 0;
+    margin: 80px 0 80px 0;
     letter-spacing: 2px;
 }
 
 .pitch__body {
-    font-size: rem-calc(42px);
+    font-family: $font-family-atrament;
+    font-size: rem-calc(38px);
     color: $white;
     text-transform: uppercase;
 }
 
 @media #{$medium-up} {
     .pitch__body {
-        font-size: rem-calc(56px);
+        font-size: rem-calc(62px);
     }
 }
 
 .pitch__body--alternate {
   color: $ampm-yellow;
+}
+
+.next-event {
+    background-color: white;
+    color: black;
+    font-size: rem-calc(16px);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: $body-font-family;
+}
+
+.next-event__header {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media #{$medium-up} {
+    .next-event__header--title {
+        margin-right: 5px;
+    }
+}
+
+.next-event__header--date {
+    display: block;
+    letter-spacing: 2px;
+}
+@media #{$medium-up} {
+    .next-event__header--date {
+        border-left: 1px solid $black;
+        display: inline;
+        padding-left: 12px;
+    }
+}
+
+.next-event__subheader:after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    display: block;
+    background: $ampm-yellow;
+    margin-top: 10px;
+}
+
+.next-event__body {
+    padding-top: 30px;
+    line-height: 30px;
+}
+
+@media #{$medium-up} {
+    .next-event__body {
+        font-size: rem-calc(20px);
+        letter-spacing: 2px;
+    }
 }
 
 .footer {
@@ -217,7 +264,10 @@ body {
 }
 
 .footer__date-loc {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    font-family: $font-family-proxima;
+    line-height: 35px;
+    font-size: rem-calc(16px);
 }
 
 @media #{$medium-up} {
@@ -227,13 +277,22 @@ body {
     }
 }
 
+.footer__location {
+    padding-left: 10px;
+}
+
+.footer__date {
+    padding-left: 10px;
+}
+
 .footer__cta {
-    margin: 20px 0 0 0;
+    margin: 30px 0 0 0;
 }
 
 @media #{$medium-up} {
     .footer__cta {
         text-align: right;
+        margin: 30px 30px 0 0;
     }
 }
 
