@@ -49,7 +49,7 @@ body {
     background-image: url(../img/05.jpg);
     background-size: cover;
     background-position: center;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
 }
 
 .hero__intro {
@@ -106,7 +106,7 @@ body {
         -webkit-animation: hover 3s infinite;
         position: relative;
         top: 100px;
-        margin: 0 0 140px 0;
+        margin: 0 auto 140px auto;
         width: 100%;
         h1 {
 
@@ -122,12 +122,6 @@ body {
     text-transform: uppercase;
     color: $ampm-yellow;
     letter-spacing: 1px;
-}
-
-@media #{$medium-up} {
-    .hero__tagline {
-        margin-top: 40px;
-    }
 }
 
 .hero__cta {
@@ -199,14 +193,15 @@ body {
     background-color: white;
     color: black;
     font-size: rem-calc(16px);
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-family: $body-font-family;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-family: $font-family-proxima;
 }
 
 .next-event__header {
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: rem-calc(20px);
 }
 
 @media #{$medium-up} {
@@ -227,6 +222,10 @@ body {
     }
 }
 
+.next-event__subheader {
+    font-size: rem-calc(20px);
+}
+
 .next-event__subheader:after {
     content: "";
     width: 100px;
@@ -245,6 +244,21 @@ body {
     .next-event__body {
         font-size: rem-calc(20px);
         letter-spacing: 2px;
+    }
+}
+
+.subhero {
+    background-image: url(../img/Greenhouse.jpg);
+    background-size: cover;
+    background-position-x: 25%;
+    padding-bottom: 40px;
+    height: 300px;
+}
+
+@media #{$medium-up} {
+    .subhero {
+        background-position: center;
+        height: 700px;
     }
 }
 
@@ -279,10 +293,12 @@ body {
 
 .footer__location {
     padding-left: 10px;
+    font-weight: 300;
 }
 
 .footer__date {
     padding-left: 10px;
+    font-weight: 300;
 }
 
 .footer__cta {
@@ -303,7 +319,7 @@ body {
 }
 
 .util-bold {
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .util-block {
