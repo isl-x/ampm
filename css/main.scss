@@ -34,7 +34,7 @@ h1 {
 }
 
 body {
-    background-color: #2C3440;
+    background-color: $jet;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -261,6 +261,31 @@ body {
         background-position: center;
         height: 700px;
     }
+}
+
+.presenters {
+    background-color: white;
+    color: black;
+    font-size: rem-calc(16px);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-family: $font-family-proxima;
+}
+
+.headshot__image {
+    background-size: cover;
+    background-position-x: 25%;
+    padding-bottom: 40px;
+    height: 300px;
+}
+
+.headshot__tagline {
+    font-family: $font-family-sans-serif;
+    color: rgba(44, 52, 64, 0.75);
+}
+
+.tagline__name {
+    line-height: 42px;
 }
 
 .footer {
