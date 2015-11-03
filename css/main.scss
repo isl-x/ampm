@@ -4,6 +4,7 @@
 @import "normalize";
 @import "foundation/settings";
 @import "foundation/components/grid";
+@import 'foundation/components/visibility';
 @import "keyframes";
 
 /* ==========================================================================
@@ -189,7 +190,7 @@ body {
   color: $ampm-yellow;
 }
 
-.next-event {
+.next-event, .presenters {
     background-color: white;
     color: black;
     font-size: rem-calc(16px);
@@ -198,7 +199,7 @@ body {
     font-family: $font-family-proxima;
 }
 
-.next-event__header {
+.next-event__header, .bio__header {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: rem-calc(20px);
@@ -222,13 +223,13 @@ body {
     }
 }
 
-.next-event__subheader {
+.next-event__subheader, .bio__subheader {
     font-size: rem-calc(20px);
     font-weight: 300;
     letter-spacing: 1px;
 }
 
-.next-event__subheader:after {
+.next-event__subheader:after, .bio__subheader:after {
     content: "";
     width: 100px;
     height: 3px;
@@ -237,13 +238,13 @@ body {
     margin-top: 10px;
 }
 
-.next-event__body {
+.next-event__body, .bio__body {
     padding-top: 30px;
     line-height: 30px;
 }
 
 @media #{$large-up} {
-    .next-event__body {
+    .next-event__body, .bio__body {
         font-size: rem-calc(20px);
     }
 }
@@ -264,12 +265,7 @@ body {
 }
 
 .presenters {
-    background-color: white;
-    color: black;
-    font-size: rem-calc(16px);
-    padding-top: 80px;
     padding-bottom: 20px;
-    font-family: $font-family-proxima;
 }
 
 .presenters__headshot {
@@ -290,6 +286,10 @@ body {
     }
 }
 
+.presenter__bio {
+    padding-bottom: 20px;
+}
+
 .headshot__image {
     max-width: 400px;
     margin-left: auto;
@@ -307,8 +307,7 @@ body {
     color: rgba(44, 52, 64, 0.75);
     min-height: 100px;
     max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    font-style: italic;
 }
 
 .tagline__name {
