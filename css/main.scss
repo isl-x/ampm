@@ -310,8 +310,16 @@ body {
     font-family: $font-family-proxima;
     color: rgba(44, 52, 64, 0.75);
     min-height: 100px;
-    max-width: 300px;
+    max-width: 400px;
     font-style: italic;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media #{$medium-up} {
+    .headshot__tagline {
+        max-width: 300px;
+    }
 }
 
 .tagline__name {
