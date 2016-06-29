@@ -38,11 +38,11 @@
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 @include foundation-flex-classes;
-//@import "normalize";
+@import "normalize";
 //@import "foundation/settings";
 //@import "foundation/components/grid";
 //@import 'foundation/components/visibility';
-//@import "keyframes";
+@import "keyframes";
 
 /* ==========================================================================
     Base styles
