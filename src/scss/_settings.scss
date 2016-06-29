@@ -55,7 +55,7 @@
 // $rem-base: 16px;
 
 // Allows the use of rem-calc() or lower-bound() in your settings
-@import 'foundation/functions';
+//@import 'foundation/functions';
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
@@ -87,9 +87,9 @@ $row-width: rem-calc(1200);
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-atrament: "atrament-web", "Arial Narrow", Arial, sans-serif;
-$font-family-proxima: "proxima-nova", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+$font-family-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-atrament: 'atrament-web', 'Arial Narrow', Arial, sans-serif;
+$font-family-proxima: 'proxima-nova', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
@@ -97,14 +97,14 @@ $font-family-proxima: "proxima-nova", "Franklin Gothic Medium", "Franklin Gothic
 // $font-weight-normal: normal;
 // $font-weight-bold: bold;
 
-$white       : #FFFFFF;
+$white: #fff;
 // $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
-$ampm-yellow : #FFC854;
+$ampm-yellow: #ffc854;
 // $vapor       : #F6F6F6;
 // $white-smoke : #F5F5F5;
 // $silver      : #EFEFEF;
-$smoke       : #ECEDEE;
+$smoke: #ecedee;
 // $gainsboro   : #DDDDDD;
 // $iron        : #CCCCCC;
 // $base        : #AAAAAA;
@@ -115,8 +115,8 @@ $smoke       : #ECEDEE;
 // $charcoal    : #555555;
 // $tuatara     : #444444;
 // $oil         : #333333;
-$jet         : #2C3440;
-$black       : #000000;
+$jet: #2c3440;
+$black: #000;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
@@ -154,9 +154,9 @@ $body-font-family: $font-family-sans-serif;
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$small-breakpoint:  em-calc(500);
+$small-breakpoint: em-calc(500);
 $medium-breakpoint: em-calc(800);
-$large-breakpoint:  em-calc(960);
+$large-breakpoint: em-calc(960);
 $xlarge-breakpoint: em-calc(1920);
 
 // $small-range:   (0, $small-breakpoint);
