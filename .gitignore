@@ -25,6 +25,8 @@ Temporary Items
 # Leave 2 lines after Icon
 Icon
 
+# static
+public/
 
 # Ruby
 .bundle/

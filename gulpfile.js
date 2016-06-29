@@ -104,6 +104,11 @@ gulp.task('extras', () => {
     .pipe(gulp.dest('public/'))
 })
 
+gulp.task('copy', function() {
+  gulp.src(['src/js/modernizr.min.js'])
+      .pipe(gulp.dest('public/js/'))
+})
+
 gulp.task('critical', () => {
   return gulp.src('public/**/*.html')
     .pipe(critical({
@@ -123,13 +128,14 @@ gulp.task('critical', () => {
     .pipe(gulp.dest('public/'))
 })
 
-gulp.task('watch', ['watchify'], () => {
+gulp.task('watch', ['watchify', 'copy'], () => {
   const browserSync = require('browser-sync').create()
   browserSync.init({
     server: 'public',
     files: 'public/**/*'
   })
 
+  gulp.watch('src/js/modernizr.min.js', ['copy']);
   gulp.watch('src/scss/**/*.scss', ['sass'])
   gulp.watch('src/**/*.html', ['nunjucks'])
   gulp.watch(EXTRAS_GLOB, ['extras'])
@@ -194,7 +200,7 @@ gulp.task('minify:js', () => {
 })
 
 gulp.task('build', (done) => {
-  runSequence('clean', ['browserify', 'nunjucks', 'sass', 'extras'], 'critical', done)
+  runSequence('clean', ['browserify', 'nunjucks', 'sass', 'extras', 'copy'], 'critical', done)
 })
 
 gulp.task('build:production', (done) => {
