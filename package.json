@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "build": "gulp build:production",
-    "dev": "gulp start"
+    "dev": "gulp start",
+    "start": "gulp start"
   },
   "author": "ISL",
   "dependencies": {
@@ -48,6 +49,7 @@
   },
   "devDependencies": {
     "browser-sync": "2.10.0",
+    "gulp": "https://registry.npmjs.org/gulp/-/gulp-3.9.0.tgz",
     "watchify": "3.6.0"
   },
   "browser": {
@@ -57,8 +59,13 @@
   },
   "browserify-shim": {
     "jquery": "$",
-    "foundation": { "exports": "Foundation",  "depends": "jquery" },
-    "foundation-mediaquery": { "depends": "foundation" }
+    "foundation": {
+      "exports": "Foundation",
+      "depends": "jquery"
+    },
+    "foundation-mediaquery": {
+      "depends": "foundation"
+    }
   },
   "browserify": {
     "transform": [
