@@ -1,7 +1,6 @@
 # ampm
 
-
-
+Wake up with DC’s Project Manager Community
 
 ## Requirements
 
@@ -11,8 +10,8 @@
 ## Installation
 
 ```
-nvm install
-npm install
+$ nvm install
+$ npm install
 ```
 
 ## Quick Start
@@ -27,25 +26,25 @@ $ npm run dev
 First, install your dependencies:
 
 ```
-npm install
+$ npm install
 ```
 
 To start a Browsersync server and watch files for development:
 
 ```
-npm run dev
+$ npm run dev
 ```
 
 or to build, cachebust, and minify all assets for production:
 
 ```
-npm run build
+$ npm run build
 ```
 
 You can also optimize PNG and JPEG images using [tinify](https://www.npmjs.com/package/tinify):
 
 ```
-npm run tinify
+$ npm run tinify
 ```
 
 ## Configuration
