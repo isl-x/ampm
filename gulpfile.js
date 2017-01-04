@@ -6,7 +6,6 @@ const del = require('del')
 const autoprefixer = require('autoprefixer')
 const postcss = require('gulp-postcss')
 const sass = require('gulp-sass')
-const stylelint = require('gulp-stylelint')
 const sourcemaps = require('gulp-sourcemaps')
 const nunjucks = require('gulp-nunjucks')
 const source = require('vinyl-source-stream')
@@ -72,11 +71,6 @@ gulp.task('watchify', () => {
 gulp.task('sass', () => {
   return gulp.src('src/scss/**/*.scss')
     .pipe(plumber())
-    .pipe(stylelint({
-      syntax: 'scss',
-      reporters: [ { formatter: 'string', console: true } ],
-      failAfterError: false
-    }))
     .pipe(sourcemaps.init())
     .pipe(sass({
       includePaths: ['node_modules/foundation-sites/scss']
