@@ -18,7 +18,7 @@
     "babelify": "7.2.0",
     "browserify": "12.0.1",
     "browserify-shim": "3.8.12",
-    "critical": "0.7.3",
+    "critical": "github:addyosmani/critical#6a2e129",
     "del": "2.0.2",
     "eslint": "2.7.0",
     "eslint-config-airbnb": "6.2.0",
